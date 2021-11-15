@@ -1,0 +1,6 @@
+.alpha { color: $purple; }
+.beta {
+  color: $yellow-300;
+  background-color: $indigo-900;
+}
+
