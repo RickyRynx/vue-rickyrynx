@@ -1,6 +1,10 @@
-.alpha { color: $purple; }
-.beta {
-  color: $yellow-300;
-  background-color: $indigo-900;
+<template>
+  <router-view></router-view>
+</template>
+
+<script>
+export default {
+  name: 'app'
 }
+</script>
 

@@ -43,39 +43,5 @@
      </div>
    </div>
  </div>
-       <hr>
-       <div class="row justify-content-center">
-        <div class="col-2">
-          <h1>About Me</h1>
-        </div>
-      </div>
-      <hr>
-       <div class="row">
-         <div class="col-md-6 col-lg-5 "><img src="Myprofil.jpg" width="550" height="615" alt="">
-         </div>
- 
-         <div class="col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
-
-                 <div class="mt-50">
-                   <h2 class="about__title">Ricky Rynx</h2>
-                   <p class="about__subtitle">Just Keep Scrolling! How To Design Lengthy, Lengthy Pages</p>
-                   <p class="about__text">Hi.My Name Is Ricky Rynx.I'm a Multi Data University Student In Palembang And This Is My First Website Design In The Form Of a Portfolio.
-                    Nice to meet you.</p>
-                  <p>My Hobbies Is Astronomy,Sports,Web Programmers.</p>
-                     
-                   <h5 class="progress_title">Astronomi</h5>
-                   <div class="progress">
-                     <div class="progress-bar progress-bar-striped bg-purple" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">70%</div>
-                   </div>
-                   
-                   <h5 class="progress_title">Sports</h5>
-                   <div class="progress">
-                     <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
-                   </div>
-                   
-                   <h5 class="progress_title">Web Programmers</h5>
-                   <div class="progress">
-                     <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">75%</div>
-                   </div>
-             </div>
+       
 </template>

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b5e34"],{"1b8e":function(n,e,c){"use strict";c.r(e);var t=c("7a23"),a=Object(t["e"])("h1",null,"Halaman Login",-1),o=[a];function u(n,e){return Object(t["o"])(),Object(t["d"])("div",null,o)}var b=c("6b0d"),d=c.n(b);const r={},i=d()(r,[["render",u]]);e["default"]=i}}]);
+//# sourceMappingURL=chunk-2d0b5e34.65868f6f.js.map
