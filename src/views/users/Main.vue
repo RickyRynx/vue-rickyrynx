@@ -1,22 +1,26 @@
 <template>
-    <layout-main>
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Users</h1>
+    <div>
+     <layout-main>
+     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Users</h1>
+        <router-link :to="{name:'createuser'}" class="btn btn-succes">Create User</router-link>
         </div>
         <div class="row">
-        <div v-for="user in dataUsers" :key="users" class="card col-md-3 mx-2 my-2">
-        <img src="" class="card-img-top" alt="...">
+        <div v-for="user in datausers" :key="user" class="card col-md-2 mx-3 my-2">
+        <img src="user.jpg" class="card-img-top" alt="">
         <div class="card-body">
             <h5 class="card-title">{{ user.name }}</h5>
+            <h6>{{ user.username }}</h6>
             <p class="card-text">
                 Company : {{ user.company.name }}
                 {{ user.address }}
             </p>
-            <router-link :to="{name:'detailuser', params: {id: user.id, username: user.username}}" class="btn btn-primary">Detail Users</a>
+            <router-link :to="{name:'detailuser', params: {id : user.id, username: user.username}}" class="btn btn-primary">Detail User</router-link>
         </div>
         </div>
         </div>
-    </layout-main>
+     </layout-main>
+     </div>
 </template>
 
 <script>
@@ -25,7 +29,7 @@
       components: {
         LayoutMain
       },
-      data() {
+     data() {
           return {
               datausers: null,
           }
@@ -36,7 +40,8 @@
           .then(response => response.json())
           .then(json => {
               this.datausers = json;
-          })
+              console.log(this.datausers)
+          }) 
             .catch(error => {
                 console.log(error);
             })
@@ -44,6 +49,7 @@
       },
       mounted() {
           this.loadUsers();
+          console.log(this.dataUsers);
       }
     }
 </script>

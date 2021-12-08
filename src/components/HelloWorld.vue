@@ -38,7 +38,7 @@
                     <h2>This Page Is My First Portfolio Design By Vue Application.</h2>
                     <p>Start Bootstrap Can Help You Build Better Websites Using The Bootstrap Framework.</p>
                     <p>Let Us Join!</p>
-                    <button type="button" class="btn btn-outline-warning">Get Started</button>
+                    <router-link to="/login" type="button" class="btn btn-outline-warning">Get Started</router-link>
                     </div>
               </div>
             </div>

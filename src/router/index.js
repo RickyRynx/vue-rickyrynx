@@ -32,10 +32,20 @@ const routes = [
         component: () => import('@/views/about/Main')
     },
     {
-        path: '/user',
-        name: 'user',
-        component: () => import('@/views/dashboard/Main')
+        path: '/users',
+        name: 'users',
+        component: () => import('@/views/users/Main')
     },
+    {
+        path: '/users/:id/:username?',
+        name: 'detailuser',
+        component: () => import('@/views/users/DetailUser')
+    },
+    {
+        path: '/create-user',
+        name: 'createuser',
+        component: () => import('@/views/users/FormCreate')
+    }
     
 ];
 
